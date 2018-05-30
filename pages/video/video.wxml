@@ -1,0 +1,23 @@
+<!--index.wxml-->
+  <view class="container">
+    <!-- <image class="dz" bindtap="sb" src="/images/timg.gif" ></image> -->
+    <scroll-view scroll-y="true" >
+      <view class="list" wx:for="{{content}}" wx:key="u" >
+        <view class="text">
+          {{item.text}}
+          <video src="{{item.video_uri}}" enable-danmu danmu-btn controls mode='widthFix'></video>
+          <image class="tx" src="{{item.profile_image}}" ></image>
+          <view class="name">{{item.name}}</view>
+          <view class="time">{{item.create_time}}</view>
+        </view>
+        <view class="bq">
+          <view class="left" ><image src="../../images/laugh.jpg"></image>
+            <view>{{item.love}}</view>
+          </view>
+          <view class="right"><image src="../../images/angry.jpg"></image>
+            <view>{{item.hate}}</view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>

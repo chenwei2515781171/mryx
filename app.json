@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/img/img",
+    "pages/video/video",
+    "pages/login/login",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "每日一笑",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar":{
+    "color":"#fff",
+    "selectedColor":"#fff",
+    "backgroundColor":"#e8a617",
+    "position":"top",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"段子"
+      },{
+        "pagePath": "pages/img/img",
+        "text": "图片"
+      },{
+        "pagePath": "pages/video/video",
+        "text": "视频"
+      }
+    ]
+  }
+}
